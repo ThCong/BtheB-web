@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/checkout3.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'>
+
+    <script>
+        function getData() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+                function(m, key, value) {
+                    vars[key] = value;
+                }
+            );
+            return vars;
+        }
+        var lname = unescape(getData()["lastname"]);
+        console.log(lname);
+        var address = unescape(getData()["address"]);
+        console.log(address);
+        var payment = unescape(getData()["payment"]);
+        console.log(payment);
+    </script>
+</head>
+
+<body>
+    <!--    navigationbar-->
+    <nav class="navigation">
+        <!--        Logo-->
+        <div class="logo"><button type="button"><img src="image/homepage/BtheB.png" width="62.9" height="21.7"></button>
+        </div>
+
+        <!--        menu-->
+        <div class="contain-menu">
+            <ul id="menu">
+                <li>
+                    <a href="homepage.html" class="active">HOME</a></li>
+                </li>
+                <li>
+                    <a href="AllProduct.html">PRODUCT CATEGORY</a>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li>
+                            <ul class="submenu">
+                                <li><a href="AllProduct.html">HIGH TOPS</a></li>
+                                <li><a href="AllProduct.html">LOW TOPS</a></li>
+                                <li><a href="AllProduct.html">SLIP ON</a></li>
+                            </ul>
+                            <a href="AllProduct.html">TYPE</a>
+                        </li>
+                        <li>
+                            <ul class="submenu">
+                                <li><a href="AllProduct.html">MEN</a></li>
+                                <li><a href="AllProduct.html">WOMEN</a></li>
+                                <li><a href="AllProduct.html">KID</a></li>
+                            </ul>
+                            <a href="AllProduct.html">SEX</a>
+                        </li>
+                        <li>
+                            <ul class="submenu">
+                                <li><a href="AllProduct.html">NIKE</a></li>
+                                <li><a href="AllProduct.html">ADIDAS</a></li>
+                                <li><a href="AllProduct.html">SUPREME</a></li>
+                                <li><a href="AllProduct.html">CONVERSE</a></li>
+                                <li><a href="AllProduct.html">TIMBERLAND</a></li>
+                                <li><a href="AllProduct.html">THENORTHFACE</a></li>
+                            </ul>
+                            <a href="AllProduct.html">BRAND</a>
+                        </li>
+                        <li><a href="AllProduct.html">LAST ITEM</a></li>
+                        <li><a href="AllProduct.html">SPORT</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="Customer Service_FAQ.html">CUSTOMER SERVICE</a></li>
+                <li><a href="About Us.html">ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <!--        right-->
+        <div class="right-elements">
+            <!--        search-->
+            <a href="#" class="search">
+                <i class="fa fa-search"></i></a>
+            <!--        cart-->
+            <a href="cart.html" class="cart">
+                <i class="fa fa-shopping-bag"></i></a>
+            <!--        user-->
+            <a href="#" class="user">
+                <i class="fa fa-user"></i></a>
+
+        </div>
+    </nav>
+
+    <!--    navigation end-->
+    <div class="body">
+        <div class="headline">
+            <h2><strong>SECURE CHECKOUT</strong></h2>
+        </div>
+        <form>
+            <table>
+                <tr>
+                    <td class="thumbstatus"><a href="checkout1.html">1</a></td>
+                    <td>
+                        <hr width="200px">
+                    </td>
+                    <td class="thumbstatus"><a href="checkout2.html">2</a></td>
+                    <td>
+                        <hr width="200px">
+                    </td>
+                    <td class="thumbstatus"><a style="background-color:#031824;color: white;" href="">3</a></td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>&nbsp;</td>
+                    <td>Payment</td>
+                    <td>&nbsp;</td>
+                    <td>Order Review</td>
+                </tr>
+            </table>
+            <h2>Your order confirm!</h2>
+            <p>Hi <strong id="lastname">Cong</strong></p>
+            <p>Your order has been confirmed and will be shipping soon.</p>
+            <hr><br>
+            <div style="padding: 20px 0px;">
+                <div class="title">
+                    <h3>ORDER DATE</h3>
+                    <h3>ORDER ID</h3>
+                    <h3>PAYMENT METHOD</h3>
+                    <h3>ADDRESS</h3>
+                </div>
+                <div class="title">
+                    <span id="date">12/12/2021</span>
+                    <span id="order_id">ID120212</span>
+                    <span id="payment">COD</span>
+                    <span id="address">KTX khu B</span>
+                </div>
+            </div>
+            <hr>
+            <ul>
+                <li class="item">
+                    <div class="thumb">
+                        <img src="image/Cart/item1.jpg">
+                        <div>
+                            <h3>Product name</h3>
+                            <p>Product info</p>
+                        </div>
+                    </div>
+                    <span id="qty">Qty: 2</span>
+                    <span id="total">40$</span>
+                </li>
+                <li class="item">
+                    <div class="thumb">
+                        <img src="image/Cart/item1.jpg">
+                        <div>
+                            <h3>Product name</h3>
+                            <p>Product info</p>
+                        </div>
+                    </div>
+                    <span id="qty">Qty: 1</span>
+                    <span id="total">20$</span>
+                </li>
+            </ul>
+            <hr>
+            <div class="line">
+                Subtotal
+                <span style="float: right;" id="subtotal">60</span>
+            </div>
+            <div class="line">
+                Shipping
+                <span style="float: right;" id="ship">5</span>
+            </div>
+            <div class="line">
+                Discount
+                <span style="float: right;" id="discount">10</span>
+            </div>
+            <hr>
+            <div class="line">
+                TOTAL
+                <span style="float: right;" id="total">55</span>
+            </div>
+            <hr>
+            <p style="margin-left: 60px; margin-top: 15px;">Thank you</p>
+            <p style="margin-left: 70px; font-weight: bold;">BtheB</p>
+        </form>
+    </div>
+
+    <script>
+        // document.getElementById("lname").innerHTML = lname;
+        var x = new Date();
+        var day = x.getDate();
+        var month = x.getMonth() + 1;
+        var year = x.getFullYear();
+        var today = day + "/" + month + "/" + year;
+        document.getElementById("date").innerHTML = today;
+        var Order_id = "ID" + Math.floor(Math.random() * 1000000) + 1;
+        console.log(Order_id);
+        document.getElementById("order_id").innerHTML = Order_id;
+        document.getElementById("payment").innerHTML = payment;
+    </script>
+    <!--    footer-->
+    <section id="footer">
+        <div class="footer-container">
+
+            <!--logo-->
+            <div class="footer-logo-container"><button type="button"><img src="image/homepage/BtheB.png" width="62.9" height="21.7"></button>
+                <!--text-->
+                <span>Copyright 2021 - @cairupbado</span>
+                <!--Social-->
+                <div class="footer-social">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cairupbado/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-skype"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+
+                </div>
+            </div>
+
+            <!--        footer menu-->
+            <div class="footer-menu">
+                <!-- footer menu box-->
+                <div class="footer-menu-box">
+                    <strong>About us</strong>
+                    <ul>
+                        <li> <a href="#"> Blog </a></li>
+                        <li> <a href="#"> Demo </a></li>
+                        <li> <a href="#"> Customers </a></li>
+                        <li> <a href="#"> Term of Service </a></li>
+                    </ul>
+
+                </div>
+
+                <!-- footer menu box-->
+                <div class="footer-menu-box">
+                    <strong>Contact us</strong>
+                    <ul>
+                        <li> <a href="#"> Support </a></li>
+                        <li> <a href="#"> Complain </a></li>
+
+                        <li> <a href="#"> Return </a></li>
+                        <li> <a href="#"> Contact </a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- footer menu box-->
+                <div class="footer-email-form">
+                    <strong>join our newsletter</strong>
+                    <ul>
+                        <input type="email" placeholder="Enter your email address" id="footer-email">
+                        <input type="submit" value="Subcribe" id="footer-email-btn"> </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

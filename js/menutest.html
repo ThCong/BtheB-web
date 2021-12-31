@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+
+    </body>
+
+</html>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    #menu {
+        list-style: none;
+        height: 10%;
+    }
+    
+    #menu li {
+        text-align: left;
+        color: #fff;
+        background-color: #F1F5F8;
+    }
+    
+    #menu li a {
+        text-decoration: none;
+        font-size: 15px;
+        display: block;
+        padding: 20px;
+        color: #031824;
+        opacity: 0.6;
+    }
+    
+    #menu li:hover a {
+        opacity: 1;
+        transition: all ease 0.3s;
+    }
+    
+    #menu .active {
+        opacity: 1;
+        font-weight: normal;
+    }
+    
+    #menu>li {
+        float: left;
+        position: relative;
+    }
+    
+    #menu>li>ul.dropdown_menu {
+        position: absolute;
+        list-style: none;
+        display: none;
+        top: 48px;
+        left: 0;
+        width: 200px;
+    }
+    
+    #menu>li:hover>ul.dropdown_menu {
+        z-index: 100;
+        display: block;
+    }
+    
+    ul.dropdown_menu>li>ul.submenu {
+        position: absolute;
+        display: none;
+        left: 200px;
+        list-style: none;
+        width: 200px;
+    }
+    
+    ul.dropdown_menu>li:hover>ul.submenu {
+        z-index: 100;
+        display: block;
+    }
+    
+    .arrow {
+        width: 0;
+        height: 0;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+    
+    .arrow-down {
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid #fff;
+    }
+    
+    .arrow-right {
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 7px solid #fff;
+    }
+</style>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+﻿body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    background-color: #f1f5f8;
+}
+
+#wrapper {
+    width: 100%;
+    padding: 0% 3%;
+}
+
+.category-top {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.category-top p,
+h4 {
+    margin: 0 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.filter {
+    max-height: 90%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 0.1px solid #031824;
+}
+
+.category-heading {
+    text-align: center;
+}
+
+.category-list {
+    list-style: none;
+    display: grid;
+    grid-template-rows: 25% 25% 15% 20% 20%;
+}
+
+.category-left-li {
+    padding-top: 10px;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #031834;
+    font-weight: 800;
+    cursor: pointer
+}
+
+.select-brand {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    border: 1px solid #808080;
+}
+
+.select-brand:hover {
+    background-color: cadetblue;
+}
+
+.select-size {
+    width: 50px;
+    height: 50px;
+}
+
+.select-size:hover {
+    background-color: cadetblue;
+}
+
+#color {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+#activity {
+    margin-left: 20px;
+}
+
+.category-right {
+    padding: 0px 35px;
+}
+
+.select {
+    float: right;
+    width: 100px;
+    height: 30px;
+}
+
+.select option {
+    color: #031824;
+}
+
+.product-list {
+    padding: 20px;
+}
+
+.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.products li {
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+ul.products li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-top {
+    position: relative;
+    overflow: hidden;
+}
+
+.products li:hover .product-thumb img {
+    transform: scale(1.18);
+}
+
+.product-thumb img {
+    display: block;
+    transition: all 1s ease;
+}
+
+.product-top a.buy-now {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #FFF;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    opacity: 0.85;
+}
+
+.products li:hover a.buy-now {
+    bottom: 0px;
+}
+
+.product-info {
+    padding: 10px 0px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-category {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0px;
+    text-decoration: none;
+}
+
+.product-name {
+    color: #031834;
+    padding: 3px 0px;
+    text-decoration: none;
+}
+
+.product-price {
+    color: #031824;
+    padding: 2px 0px;
+    font-weight: 800;
+}

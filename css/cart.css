@@ -1,0 +1,129 @@
+.container-but {
+    margin: 10px 60px;
+}
+
+.container-but button {
+    color: #031824;
+    background-color: white;
+    font-size: 14px;
+    border: 2px solid #031824;
+    border-radius: 3px;
+    padding: 0px 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.container-but button:hover {
+    border: none;
+    background-color: #031824;
+    color: white;
+    transition: 0.5s;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.container hr {
+    margin: 0px 80px;
+}
+
+.container .title_order {
+    padding: 10px 100px;
+    display: grid;
+    grid-template-columns: 50% 20% 25% 10%;
+}
+
+.order {
+    padding: 10px 100px;
+    display: grid;
+    grid-template-columns: 50% 20% 25% 10%;
+}
+
+.order p {
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.productitem {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+.productitem img {
+    width: 120px;
+    height: 150px;
+}
+
+.product_info {
+    margin-left: -30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
+}
+
+.container .order .quantity {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container .order .quantity .edit {
+    margin-top: 60px;
+    margin-left: -15px;
+    margin-bottom: 10px;
+}
+
+.subtract {
+    width: 30px;
+    height: 30px;
+    padding: 5px 12px;
+    margin: 0px 5px;
+    color: white;
+    border: #031824 solid 1px;
+    background-color: #314354;
+    cursor: pointer;
+}
+
+.add {
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    color: #031824;
+    border: #031824 solid 1px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.quantity u {
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.price,
+.total {
+    margin-top: 70px;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.end {
+    margin-left: 95px;
+    display: grid;
+    grid-template-columns: 88% 10%;
+}
+
+.end span {
+    font-size: 18px;
+    margin-top: 10px;
+}

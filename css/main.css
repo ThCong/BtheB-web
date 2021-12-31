@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    ;
+}
+
+body {
+    background-color: #F1F5F8;
+    font-family: 'Nunito', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headline {
+    text-align: center;
+    margin: 10% 0% 5%;
+}
+
+.headline h2 {
+    font-size: 18px;
+    color: #031824;
+    padding: 1% 3%;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    color: #555;
+}
+
+
+/*= navigation bar */
+
+.navigation {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 10%;
+    background-color: #F1F5F8;
+}
+
+.navigation .logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation .logo button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+.logo img {
+    max-width: 60%;
+    height: 100%;
+}
+
+.navigation.logo:hover button {
+    transform: scale(2);
+    transition: all ease 0.3s;
+    box-shadow: 1px 1px 10px #ddd;
+}
+
+.contain-menu {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu {
+    list-style: none;
+}
+
+#menu li {
+    text-align: left;
+    color: #fff;
+    background-color: #F1F5F8;
+}
+
+#menu li a {
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px;
+    color: #031824;
+    opacity: 0.8;
+}
+
+#menu li:hover a {
+    opacity: 1;
+    transition: all ease 0.3s;
+    font-weight: 600
+}
+
+#menu .active {
+    opacity: 1;
+    font-weight: 600
+}
+
+#menu>li {
+    float: left;
+    position: relative;
+}
+
+#menu>li>ul.dropdown_menu {
+    position: absolute;
+    list-style: none;
+    display: none;
+    width: 100%;
+}
+
+#menu>li:hover>ul.dropdown_menu {
+    z-index: 100;
+    display: block;
+}
+
+ul.dropdown_menu>li>ul.submenu {
+    position: absolute;
+    display: none;
+    left: 100%;
+    list-style: none;
+    width: 100%;
+}
+
+ul li ul {
+    opacity: 0.8;
+}
+
+ul.dropdown_menu li:hover a {
+    opacity: 1;
+}
+
+ul.dropdown_menu>li:hover>ul.submenu {
+    z-index: 100;
+    display: block;
+}
+
+.right-elements {
+    width: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.right-elements a {
+    margin: 0px 10px;
+}
+
+.right-elements a i {
+    color: #2c2c2c;
+}
+
+.right-elements a:hover i {
+    color: orangered;
+    transition: all ease 0.2s;
+}
+
+
+/*footer*/
+
+#footer {
+    background-color: #ededed;
+    padding: 60px 10px;
+    position: relative;
+    margin-top: 20px;
+    border-top: 1px solid rgb(236, 236, 236);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin: 10px auto;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo-container button {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.footer-logo-container span {
+    color: #031824;
+    font-weight: 400;
+    margin: 10px;
+    font-size: 0.8rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a {
+    margin: 0 6px;
+    color: #031824;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social a:hover {
+    color: red;
+    transition: all ease 0.3s;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    /*    align-items: center;*/
+}
+
+.footer-menu-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 60px;
+}
+
+.footer-menu-box strong {
+    color: #031824;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.footer-menu-box ul li a,
+.footer-menu-box ul li {
+    color: #031824;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.footer-menu-box ul li a:hover {
+    color: red;
+    transition: all ease 0.3s;
+}
+
+.footer-email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 60px;
+}
+
+.footer-email-form strong {
+    color: #031824;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+#footer-email {
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder {
+    color: grey;
+    font-size: 12px;
+}
+
+#footer-email-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #031824;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#footer-email-btn:hover {
+    cursor: pointer;
+    background-color: orangered;
+    transition: all 0.4s ease-out;
+}

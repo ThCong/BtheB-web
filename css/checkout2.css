@@ -1,0 +1,114 @@
+.body {
+    padding: 0px 100px;
+}
+
+table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbstatus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+tr td a {
+    text-align: center;
+    border: 1px solid #031824;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 6px;
+    color: #031824;
+}
+
+.container {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.payment-item {
+    border: 1px solid #031824;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 150px;
+}
+
+.payment-item input {
+    width: 150px;
+}
+
+.thumb-payment {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    text-align: right;
+    padding-top: 20px;
+}
+
+.thumb-payment img {
+    width: 90px;
+    height: 70px;
+}
+
+.summary,
+.basket {
+    margin-left: 50px;
+    padding: 5px 10px;
+    border: 1px solid #031824;
+    margin-bottom: 10px;
+}
+
+.summary h3,
+hr,
+p {
+    margin-bottom: 5px;
+}
+
+.summary p {
+    margin-left: 10px;
+}
+
+#discount {
+    opacity: 70%;
+}
+
+.item {
+    width: 100%;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-left: 10px;
+}
+
+.thumb {
+    height: 110px;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.thumb img {
+    width: 65%;
+    max-height: 90%;
+}
+
+.info {
+    margin-left: -40px;
+    margin-top: 30px;
+}
+
+.continue {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.continue input {
+    padding: 10px 50px;
+}

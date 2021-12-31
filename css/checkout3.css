@@ -1,0 +1,73 @@
+.body {
+    padding: 0px 100px;
+}
+
+table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbstatus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+tr td a {
+    text-align: center;
+    border: 1px solid #031824;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 6px;
+    color: #031824;
+}
+
+p {
+    font-size: 17px;
+}
+
+hr {
+    padding: 0xp 100px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.item {
+    height: 180px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 15% 15%;
+    padding: 0px 30px;
+    align-items: center;
+}
+
+.thumb {
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    padding: 15px;
+    align-items: center;
+}
+
+.thumb img {
+    max-width: 60%;
+    max-height: 100%;
+    margin-right: 10px;
+}
+
+#qty,
+#total {
+    text-align: right;
+}
+
+.line {
+    padding: 15px 160px 15px 70px;
+    font-size: 18px;
+}
