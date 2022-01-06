@@ -9,30 +9,15 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/checkout1.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'>
-
-    <script>
-        function ChangeShip() {
-            var subtotal = document.getElementById("subtotal").innerHTML;
-            var discount = document.getElementById("discount").innerHTML;
-            var total = document.getElementById("total").innerHTML;
-
-            var ship = Math.floor(Math.random() * 4) + 1;
-            document.getElementById("ship").innerHTML = ship;
-            total = subtotal * 1 + ship - discount;
-            document.getElementById("total").innerHTML = total;
-        }
-
-        function Continue() {
-            window.open("checkout2.html", "_self");
-        }
-    </script>
+    <script src="js/checkout1.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
     <!--    navigationbar-->
     <nav class="navigation">
         <!--        Logo-->
-        <div class="logo"><button type="button"><img src="image/homepage/BtheB.png" width="62.9" height="21.7"></button>
+        <div class="logo"><button type="button" onclick="LinkHomepage()"><img src="image/homepage/BtheB.png" ></button>
         </div>
 
         <!--        menu-->
@@ -105,15 +90,23 @@
         </div>
         <table>
             <tr>
-                <td class="thumbstatus"><a style="background-color:#031824;color: white;">1</a></td>
+                <td class="thumbstatus">
+                    <div style="background-color:#031824;color: white;"><a>1</a></div>
+                </td>
                 <td>
                     <hr width="200px">
                 </td>
-                <td class="thumbstatus"><a>2</a></td>
+                <td class="thumbstatus">
+                    <div><a>2</a></div>
+                </td>
                 <td>
                     <hr width="200px">
                 </td>
-                <td class="thumbstatus"><a>3</a></td>
+                <td class="thumbstatus">
+                    <div>
+                        <a>3</a>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>Shipping</td>
@@ -139,18 +132,21 @@
                     </div>
                     <div class="row">
                         <select name="city" onchange="ChangeShip()">
+                            <option>Select city</option>
                             <option value="TPHCM">TP.HCM</option>
                             <option value="QN">Quang Nam</option>
                             <option value="GL">Gia Lai</option>
                             <option value="VT">Vung Tau</option>
                         </select>
                         <select name="district" onchange="ChangeShip()">
+                            <option >Select district</option>
                             <option value="">Quan 1</option>
                             <option value="">Hoc Mon</option>
                             <option value="">Thu Duc</option>
                             <option value="">Binh Thanh</option>
                         </select>
                         <select name="ward" onchange="ChangeShip()">
+                            <option >Select ward</option>
                             <option value="">Linh Xuan</option>
                             <option value="">Linh Trung</option>
                             <option value="">An Son</option>

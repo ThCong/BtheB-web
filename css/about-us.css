@@ -1,0 +1,96 @@
+body {
+    background-color: #F1F5F8;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 70px
+}
+
+.card1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: fit-content;
+    padding: 0px 200px;
+    margin-top: -100px;
+}
+
+.vision {
+    background-color: #EDEDED;
+    padding: 50px 40px;
+}
+
+.tittle {
+    font-size: 35px;
+    color: #354650;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #031824;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.mission {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 90px 30px;
+}
+
+.tittle2 {
+    font-size: 35px;
+    color: #031824;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text2 {
+    font-size: 20px;
+    color: #031824;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.team-tittle {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: center;
+}
+
+.team-tittle hr {
+    margin-top: -25px;
+    height: 3px;
+    border: #031824;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    padding: 0px 100px;
+}
+
+.info {
+    text-align: center;
+}
+
+.container3 img {
+    width: 120px;
+    height: 120px;
+}
+
+.info .name {
+    color: #031824;
+    font-size: 18px;
+}

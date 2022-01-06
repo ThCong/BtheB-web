@@ -1,0 +1,389 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    background-color: #f1f5f8;
+}
+
+.prdetail-container {
+    padding: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.prdetail-top {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.prdetail-top p {
+    font-family: 'Nunito', sans-serif;
+    margin: 0 12px;
+    font-size: 12px;
+}
+
+.prdetail-row {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.prdetail-content-left {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 12px;
+}
+
+.product_thumb {
+    width: 90%;
+    margin-right: 20px;
+}
+
+.product_thumb img {
+    width: 100%;
+    padding-right: 20%;
+}
+
+.product_img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.product_img img {
+    width: 100%;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.product_img img:hover {
+    border: solid 0.5px #031824;
+}
+
+.prdetail-content-right {
+    width: 50%;
+    padding-right: 12px;
+}
+
+hr {
+    width: 500px;
+    background-color: #031824;
+    height: 0.5px;
+    text-align: center;
+    margin-right: 150px;
+}
+
+.detail-product-size {
+    padding-top: 30px;
+}
+
+.btnsize {
+    color: #031824;
+    background-color: white;
+    border: solid 0.5px #031824;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.btnsize:hover {
+    background-color: #031824;
+    color: white;
+}
+
+.btncolor {
+    width: 80px;
+    height: 80px;
+    transition: all 0.25s ease;
+    position: center;
+}
+
+.btncolor:hover {
+    border: solid 1px #031824;
+}
+
+.detail-product-btn {
+    margin-top: 20px;
+}
+
+.addcart {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.addcart:hover {
+    background-color: #031824;
+    color: white;
+}
+
+.quickbuy {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.quickbuy:hover {
+    background-color: #bb1212;
+    color: white;
+}
+
+
+/*STYLE NAV TABS*/
+
+.detail-product-wrap {
+    margin-left: 20px;
+    width: 1250px;
+}
+
+.tabs {
+    border-bottom: 1px solid #b2b0b0;
+}
+
+.nav-tabs {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    border-top: 2px solid #b2b0b0;
+    margin-top: 20px;
+}
+
+.nav-tabs li a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #031824;
+    position: relative;
+    font-size: 20px;
+}
+
+.nav-tabs li a:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: -2px;
+    background: transparent;
+}
+
+.nav-tabs li.active a::after,
+.nav-tabs li:hover a::after {
+    background: #031824;
+}
+
+
+/*STYLE TAB CONTENT*/
+
+.detail-product-tab-content {
+    padding: 20px 0px;
+}
+
+
+/*USER RATES*/
+
+.imgreview {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+
+.checked {
+    color: orange;
+}
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+.side {
+    float: left;
+    width: 10%;
+    margin-top: 10px;
+}
+
+.middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+}
+
+
+/* Place text to the right */
+
+.right {
+    text-align: right;
+}
+
+
+/* Clear floats after the columns */
+
+.rate-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* The bar container */
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+
+/* Individual bars */
+
+.bar-5 {
+    width: 60%;
+    height: 18px;
+    background-color: #04AA6D;
+}
+
+.bar-4 {
+    width: 30%;
+    height: 18px;
+    background-color: #2196F3;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 18px;
+    background-color: #00bcd4;
+}
+
+.bar-2 {
+    width: 4%;
+    height: 18px;
+    background-color: #ff9800;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 18px;
+    background-color: #f44336;
+}
+
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+
+@media (max-width: 400px) {
+    .side,
+    .middle {
+        width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+        display: none;
+    }
+}
+
+.product-related-list {
+    margin: 0 auto;
+}
+
+.product-related-list-products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-related-list-products li {
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.product-related-list-products li img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-related-list-item-top {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-related-list-products li:hover .product-related-list-item-thumb img {
+    transform: scale(1.18);
+}
+
+.product-related-list-item-thumb img {
+    display: block;
+    transition: all 1s ease;
+}
+
+.product-related-list-item-top a.btnbuy-now {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #FFF;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    opacity: 0.85;
+}
+
+.product-related-list-products li:hover a.btnbuy-now {
+    bottom: 0px;
+}
+
+.product-related-list-item-info a {
+    display: block;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #031824;
+}
+
+.product-related-list-item-info .prdcategory {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0;
+}
+
+.product-related-list-item-info .prdname {
+    font-weight: bold;
+    color: #031824;
+    padding: 3px 0;
+    font-size: 16px;
+}
+
+.product-related-list-item-info .prdprice {
+    padding: 2px 0;
+    color: #031824;
+}

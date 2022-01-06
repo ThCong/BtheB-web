@@ -8,105 +8,22 @@
 
     <!--    <link href="style.css" rel="stylesheet">-->
     <title></title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Quicksand', sans-serif;
-            ;
-        }
-        
-        body {
-            background: #F1F5F8;
-            font-family: 'Quicksand', sans-serif;
-            ;
-        }
-        
-        .content {
-            align-content: center;
-            margin: 20px;
-        }
-        
-        .content .cards {
-            padding: 10px 5px 15px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        
-        .content .cards .card {
-            width: 250px;
-            height: 150px;
-            background: #fff;
-            margin: 20px 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            box-shadow: 04px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-        }
-        
-        .content .content-2 {
-            min-height: 60vh;
-            display: flex;
-            align-items: flex-start;
-        }
-        
-        .content .content-2 .recent-product {
-            min-height: 50vh;
-            flex: 6;
-            background: #ffff;
-            margin: 0 25px 25px 5px;
-            box-shadow: 04px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-            display: flex;
-            flex-direction: column;
-        }
-        
-        table {
-            padding: 10px;
-        }
-        
-        th,
-        td {
-            text-align: center;
-            padding: 16px;
-        }
-        
-        .sort {
-            display: block;
-            margin: 50px 0 50px 1000px;
-            color: #031824;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        
-        a {
-            text-decoration: none;
-            font-size: 15px;
-            margin-top: 6px;
-        }
-        
-        .title {
-            display: flex;
-            margin-top: 10px;
-        }
+    <link rel="stylesheet" href="css/admin/customer.css">
     </style>
 </head>
 
 <body>
     <div class="content">
+        <a href="#" class="btn">Add Customer</a>
 
         <div class="sort">
             <span>Sort by</span>
-            <span>
-                    <select name="sort-by">
+            <select name="sort-by">
                         <option value="Date">Date</option>
                         <option value="Week">Week</option>
                         <option value="Month">Month</option>
                         <option value="Year">Year</option>
                     </select>
-                </span>
         </div>
         <div class="content-2">
             <div class="recent-product">

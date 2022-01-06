@@ -1,8 +1,8 @@
 .body {
-    padding: 0px 100px;
+    padding: 0px 8%;
 }
 
-table {
+.body table {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,18 +10,18 @@ table {
 
 .thumbstatus {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
-tr td a {
-    text-align: center;
+.thumbstatus div {
     border: 1px solid #031824;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    padding-top: 6px;
-    color: #031824;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -36,13 +36,12 @@ tr td a {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
     align-items: center;
     height: 150px;
 }
 
 .payment-item input {
-    width: 150px;
+    width: 100px;
 }
 
 .thumb-payment {
@@ -50,12 +49,14 @@ tr td a {
     height: 100%;
     background-size: 100% 100%;
     text-align: right;
-    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .thumb-payment img {
-    width: 90px;
-    height: 70px;
+    max-width: 60%;
+    max-height: 50%;
 }
 
 .summary,
@@ -82,26 +83,25 @@ p {
 
 .item {
     width: 100%;
-    height: 120px;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     margin-left: 10px;
 }
 
 .thumb {
-    height: 110px;
     width: 100%;
     background-size: 100% 100%;
 }
 
 .thumb img {
-    width: 65%;
-    max-height: 90%;
+    max-width: 100%;
 }
 
 .info {
-    margin-left: -40px;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
 }
 
 .continue {

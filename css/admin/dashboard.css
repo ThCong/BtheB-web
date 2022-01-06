@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    ;
+}
+
+body {
+    background: #F1F5F8;
+}
+
+.content {
+    align-content: center;
+    margin: 20px;
+}
+
+.sort {
+    text-align: right;
+    display: block;
+    color: #031824;
+    font-weight: bold;
+    margin: 0px 2%;
+}
+
+.sort select {
+    width: 8%;
+}
+
+.content .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .cards .card {
+    width: 350px;
+    height: 250px;
+    background: #fff;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 04px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.content .cards .card-1 {
+    width: 700px;
+    height: 250px;
+    background: #fff;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 04px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.content .content-2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.content .content-2 .recent-product {
+    min-height: 50vh;
+    flex: 5;
+    background: #ffff;
+    margin: 0 25px 25px 25px;
+    box-shadow: 04px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column
+}
+
+table {
+    padding: 10px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px
+}

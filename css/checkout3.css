@@ -1,8 +1,8 @@
 .body {
-    padding: 0px 100px;
+    padding: 0px 8%;
 }
 
-table {
+.body table {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,26 +10,27 @@ table {
 
 .thumbstatus {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
-tr td a {
-    text-align: center;
+.thumbstatus div {
     border: 1px solid #031824;
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    padding-top: 6px;
-    color: #031824;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-p {
+.orderdetail p {
     font-size: 17px;
 }
 
-hr {
-    padding: 0xp 100px;
+.orderdetail hr {
+    padding: 0px 100px;
+    margin: 10px;
 }
 
 .title {
@@ -44,7 +45,6 @@ hr {
     width: 100%;
     display: grid;
     grid-template-columns: 60% 15% 15%;
-    padding: 0px 30px;
     align-items: center;
 }
 
@@ -58,16 +58,33 @@ hr {
 
 .thumb img {
     max-width: 60%;
-    max-height: 100%;
+    max-height: 80%;
     margin-right: 10px;
 }
 
 #qty,
-#total {
+#total1 {
     text-align: right;
 }
 
 .line {
-    padding: 15px 160px 15px 70px;
+    padding: 0px 5%;
     font-size: 18px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+#subtotal,
+#ship,
+#discount,
+#total {
+    text-align: center;
+}
+
+.signature {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

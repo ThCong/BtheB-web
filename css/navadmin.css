@@ -1,209 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    ;
+}
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing:border-box;
-            font-family: 'Quicksand', sans-serif;;
-        }
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #F1F5F8;
+}
 
-        body{
-            min-height:100vh;
-            font-family: 'Quicksand', sans-serif;;
-        }
+li {
+    list-style: none;
+}
 
-        a{
-            text-decoration: none;
-            font-size: 18px;
-    
-            color: #F1F5F8;
-        }
-        li{
-            list-style: none;
-        }
+.btn {
+    background: #031824;
+    color: #F1F5F8;
+    padding: 10px 10px;
+    text-align: center
+}
 
-        h1{
-            color: #F1F5F8;
-        }
-        h3{
-            color:#808080
-        }
+.btn:hover {
+    background: #c2bebe;
+    color: #031824;
+    padding: 3px 8px;
+    border: 2px solid #031824;
+}
 
-        .btn{
-            background: #031824;
-            color: #F1F5F8;
-            padding: 10px 10px;
-            text-align: center
-        }
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 1px solid #031824
+}
 
-        .btn:hover{
-            background: #c2bebe;
-            color: #031824;
-            padding: 3px 8px;
-            border: 2px solid #031824;
-            
-        }
-        .title {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 15px 10px;
-            border-bottom: 1px solid #031824
-        }
+.side-menu {
+    position: fixed;
+    background: #031824;
+    display: flex;
+    flex-direction: column;
+}
 
-        .side-menu{
-            position: fixed;
-            background: #031824;
-            
-            display: flex;
-            flex-direction: column;
-        }
+.side-menu .brand-name {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
 
-        .side-menu .brand-name{
-            height: 10vh;
-            display: flex;
-            align-items:center;
-            justify-content: center
-        }
-        .side-menu li{
-            font-size: 18px;
-            width: 100%;
-            padding: 20px 50px;
-            color: #F1F5F8;
-            display: flex;
-            align-items: center;
-        }
-        .side-menu li:hover{
-            background: #F1F5F8;
-            color: #031824;
-            width: 100%;
-        }
+.side-menu li {
+    font-size: 18px;
+    width: 100%;
+    padding: 20px 50px;
+    color: #F1F5F8;
+    display: flex;
+    align-items: center;
+}
 
-        .container {
-            position: absolute;
-            right: 0;
-           
-            background: #F1F5F8
-        }
+.side-menu li:hover {
+    background: #F1F5F8;
+    color: #031824;
+    width: 100%;
+}
 
-        .container .header{
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 80vw;
-            height: 10vh;
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-         .container .header .nav{
-                width: 90%;
-                display: flex;
-                align-items: center;
-         }
-         .container .header .nav .search{
-             flex: 3;
-             display: flex;
-             justify-content: center
-         }
-         .container .header .nav .search input[type = text]{
-             border: none;
-             background: #F1F5F8;
-             padding: 10px;
-             width: 50%
-         }
-         .container .header .nav .search button{
-             width: 40px;
-             height: 40px;
-             border: none;
-             display: flex;
-             align-items: center;
-             justify-content: center
-         }
-         .container .header .nav .user {
-                flex: 1;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-         }
-         .container .header .nav .user img{
-             width: 50px;
-             height: 50px;
-         }
-         .container .header .nav .user .img-case {
-                position: relative;
-                width:50px;
-                height: 50px
-            }
-         
-         .content{
-             
-            position: absolute;
-            right: 0;   
-            background: #F1F5F8
-             
-         }
-         .content .cards{
-             padding: 20px 15px;
-             display:flex;
-             align-items: center;
-             justify-content: space-between;
-             flex-wrap: wrap;
-         }
+.side-menu li:hover a {
+    color: #031824;
+    width: 100%;
+}
 
-          .content .cards .card {
-                width: 250px;
-                height: 150px;
-                background: #fff;
-                margin: 20px 10px;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                box-shadow: 04px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-            }
-            .content .content-2{
-                min-height: 60vh;
-                display: flex;
-                justify-content: space-around;
-                align-items: flex-start;
-                flex-wrap: wrap;
-            }
-            .content .content-2 .recent-product {
-                    min-height: 50vh;
-                    flex: 5;
-                    background: #ffff;
-                    margin: 0 25px 25px 25px;
-                    box-shadow: 04px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-                    display: flex;
-                    flex-direction: column
-            }
+.brand-name button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 
-            table{
-                padding: 10px;
-            }
-            th,td{
-                text-align:left;
-                padding:8px
-            }
-
-            .sort span{
-                color: #031824;
-                font-weight: bold;
-                font-size: 20px;
-                
-            }
-        
-        .brand-name button {
-            background: transparent;
-            border: none;
-            cursor: pointer;
-        }
-
-        .brand-name:hover button {
-            transform: scale(1.07);
-            transition: all ease 0.3s;
-            
-        }
-
-
+.brand-name:hover button {
+    transform: scale(1.07);
+    transition: all ease 0.3s;
+}

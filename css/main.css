@@ -47,7 +47,7 @@ a {
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 40px;
+    height: 10%;
     background-color: #F1F5F8;
     z-index: 10;
 }
@@ -63,12 +63,11 @@ a {
     background: transparent;
     border: none;
     cursor: pointer;
-    width: 50%;
+    max-width: 50%;
 }
 
 .logo img {
     max-width: 60%;
-    height: 100%;
 }
 
 .navigation.logo:hover button {
@@ -100,7 +99,7 @@ a {
     display: block;
     padding: 20px;
     color: #031824;
-    /* opacity: 0.8; */
+    opacity: 0.8;
     padding: 10px 20px 10px 20px;
 }
 
@@ -140,14 +139,6 @@ ul.dropdown_menu>li>ul.submenu {
     width: 100%;
 }
 
-ul li ul {
-    opacity: 0.8;
-}
-
-ul.dropdown_menu li:hover a {
-    opacity: 1;
-}
-
 ul.dropdown_menu>li:hover>ul.submenu {
     z-index: 100;
     display: block;
@@ -178,7 +169,7 @@ ul.dropdown_menu>li:hover>ul.submenu {
 
 #footer {
     background-color: #ededed;
-    padding: 60px 10px;
+    padding: 5% 10px;
     position: relative;
     margin-top: 20px;
     border-top: 1px solid rgb(236, 236, 236);
@@ -188,7 +179,6 @@ ul.dropdown_menu>li:hover>ul.submenu {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 85%;
     margin: 10px auto;
 }
 
@@ -197,6 +187,7 @@ ul.dropdown_menu>li:hover>ul.submenu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 20%;
 }
 
 .footer-logo-container button {
@@ -237,15 +228,15 @@ ul.dropdown_menu>li:hover>ul.submenu {
 
 .footer-menu {
     display: flex;
-    justify-content: space-around;
-    /*    align-items: center;*/
+    align-items: center;
+    width: 70%;
 }
 
 .footer-menu-box {
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 60px;
 }
 
 .footer-menu-box strong {
@@ -253,7 +244,6 @@ ul.dropdown_menu>li:hover>ul.submenu {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 5px;
 }
 
 .footer-menu-box ul li a,
@@ -264,15 +254,14 @@ ul.dropdown_menu>li:hover>ul.submenu {
 }
 
 .footer-menu-box ul li a:hover {
-    color: red;
+    opacity: 0.8;
     transition: all ease 0.3s;
 }
 
 .footer-email-form {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 60px;
 }
 
 .footer-email-form strong {
@@ -281,17 +270,18 @@ ul.dropdown_menu>li:hover>ul.submenu {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    margin-right: 5px;
 }
 
 #footer-email {
-    width: 200px;
+    width: 50%;
     height: 30px;
     border-radius: 20px;
     outline: none;
     border: none;
-    padding-left: 0.5rem;
+    padding-left: 5px;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2px;
 }
 
 #footer-email::placeholder {
@@ -300,14 +290,13 @@ ul.dropdown_menu>li:hover>ul.submenu {
 }
 
 #footer-email-btn {
-    width: 80px;
+    width: 20%;
     height: 30px;
     border-radius: 20px;
     background-color: #031824;
-    outline: none;
     border: none;
     color: white;
-    font-size: 1rem;
+    font-size: 12px;
 }
 
 #footer-email-btn:hover {

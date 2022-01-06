@@ -7,129 +7,25 @@
     <!--    <link href="style.css" rel="stylesheet">-->
     <title></title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Quicksand', sans-serif;
-            ;
-        }
-        
-        body {
-            background: #F1F5F8;
-            font-family: 'Quicksand', sans-serif;
-            ;
-        }
-        
-        .btn {
-            margin: 0 800px 0 50px;
-            background: #031824;
-            color: #F1F5F8;
-            padding: 10px 10px;
-            text-align: center
-        }
-        
-        .btn:hover {
-            background: #c2bebe;
-            color: #031824;
-        }
-        
-        .content {
-            align-content: center;
-            margin: 20px;
-        }
-        
-        .content .cards {
-            padding: 10px 5px 15px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        
-        .content .cards .card {
-            width: 250px;
-            height: 150px;
-            background: #fff;
-            margin: 20px 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            box-shadow: 04px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-        }
-        
-        .content .content-2 {
-            min-height: 60vh;
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-        
-        .content .content-2 .recent-product {
-            min-height: 50vh;
-            flex: 5;
-            background: #ffff;
-            margin: 0 25px 25px 25px;
-            box-shadow: 04px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-            display: flex;
-            flex-direction: column
-        }
-        
-        table {
-            padding: 10px;
-        }
-        
-        th,
-        td {
-            text-align: center;
-            padding: 16px;
-        }
-        
-        .sort {
-            display: block;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            color: #031824;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        
-        a {
-            text-decoration: none;
-            font-size: 15px;
-            margin-top: 6px;
-        }
-        
-        .title {
-            display: flex;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/admin/product.css">
 </head>
 
 <body>
     <div class="content">
-
+        <a href="#" class="btn">Add Product</a>
         <div class="sort">
-            <a href="#" class="btn">Add Product</a>
             <span>Sort by</span>
-            <span>
-                    <select name="sort-by">
+            <select name="sort-by">
                         <option value="Date">Date</option>
                         <option value="Week">Week</option>
                         <option value="Month">Month</option>
                         <option value="Year">Year</option>
-                    </select>
-                </span>
+            </select>
         </div>
         <div class="content-2">
             <div class="recent-product">
                 <div class="title">
                     <span style="color:#031824; font-size:22px; font-weight:bold; margin-left: 20px">Product</span>
-                    <a href="#">&nbsp;(View all)&nbsp;</a>
                 </div>
                 <table>
                     <tbody>
