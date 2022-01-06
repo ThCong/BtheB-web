@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <product> 
  <title>The North Face Lace-Up Boots</title>
  <type>HIGH TOP</type> 
@@ -30,16 +31,41 @@
 
 <product> 
 <title>Air Jordan 1</title>
- <type>LOW TOP</type> 
+<type>LOW TOP</type> 
 <price>2.500.000VND</price>
 </product>
 
 <product> 
 <title>Converse x NBA Jam Chuck Taylor 70</title>
- <type>HIGH  TOP</type> 
+<type>HIGH  TOP</type> 
 <price>1.900.000VND</price>
+</product>
+<product> 
+<title>Nike Air Force 1</title>
+ <type>LOW TOP</type> 
+<price>1.800.000VND</price>
 </product>
 
 <product> 
-<title>Nike Air Force 1</title>
- <type>LOW 
+<title>Timberland Swift Hiking Boots</title>
+ <type>HIGH TOP</type> 
+<price>2.500.000VND</price>
+</product>
+
+<product> 
+<title>Timberland Warm Lined Slip On</title>
+<type>SLIP ON</type> 
+<price>1.500.000VND</price>
+</product>
+
+<product> 
+<title>Vans Old Skool</title>
+ <type>LOW TOP</type> 
+<price>1.300.000VND</price>
+</product>
+
+<product> 
+<title>Vans Sk8 Hi Animal</title>
+ <type>HIGH TOP</type> 
+<price>1.700.000VND</price>
+</product>

@@ -12,7 +12,6 @@ var address = unescape(getData()["address"]);
 console.log(lname);
 
 
-
 function OpenCheckout3() {
     window.open("checkout3.html", "_self");
 }
