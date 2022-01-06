@@ -3,5 +3,11 @@ function open_popup() {
 }
 
 function close_popup() {
+    document.contact.reset();
     document.getElementById("pop-up").style.display = "none";
+}
+
+function Send() {
+    close_popup();
+    window.alert("Cảm ơn bạn đã đồng hành cùng BtheB");
 }

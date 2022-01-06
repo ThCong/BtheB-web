@@ -8,6 +8,7 @@
     <link href="css/homepage.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
 
 
 </head>
@@ -79,14 +80,140 @@
             <a href="cart.html" class="cart">
                 <i class="fa fa-shopping-bag"></i></a>
             <!--        user-->
-            <a href="#" class="user">
+            <a class="user">
                 <i class="fa fa-user"></i></a>
 
         </div>
     </nav>
 
     <!--    navigation end-->
+    <!---- pop up sign in----->
 
+    <div class="popup" id="id01">
+        <div class="close-btn" onclick="toggle()">&times;</div>
+        <div class="form">
+            <img src="image_homepage/BtheB.png" class="center-img">
+
+            <div class="form-element">
+                <label for="username">Username: </label>
+                <div class="input-box">
+                    <input type="text" id="usernameinput" placeholder="Enter your username">
+                </div>
+            </div>
+            <div class="form-element">
+                <label for="password">Password: </label>
+                <div class="input-box">
+                    <input type="password" id="myInput" placeholder="Enter your password">
+                    <span class="eye" onclick="myFunction()">  
+            <i id="hide1" class="fa fa-eye" style="color: #031824; font-size: 13"></i>
+            <i id="hide2" class="fa fa-eye-slash" style="color: #031824; font-size: 13"></i>
+            </span>
+                </div>
+
+            </div>
+
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me </label>
+                <button id="reset-pass" onclick="reset()">Forgot password?</button>
+            </div>
+
+
+            <div class="form-element">
+                <div class="form-but">
+                    <button type="button" onclick="toggle()" id="signin">SIGN IN</button>
+                </div>
+            </div>
+            <div class="form-element">
+                <div class="form-but1">
+                    <button type="button" onclick="toggle()">SIGN IN AS ADMIN </button>
+                </div>
+            </div>
+            <div class="form-element">
+                <p>Or</p>
+            </div>
+            <div class="form-element">
+                <div class="form-but">
+                    <button type="button" id="show-signup" onclick="signup()">CREATE A NEW ACCOUNT </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!---- pop up sign up----->
+
+    <div class="popup-signup" id="id02">
+        <div class="cancel-btn" onclick="toggle()">&times;</div>
+        <form class="form" id="signup-form" name="signupform">
+            <img src="image_homepage/BtheB.png" class="center-img">
+            <div class="form-element">
+                <label for="phone">User name: </label>
+                <input type="text" id="username" placeholder="BtheB">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error type</small>
+            </div>
+            <div class="form-element">
+                <label for="email">Email: </label>
+                <input type="email" id="signup-email" placeholder="btheb@gmail.com">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error type</small>
+            </div>
+            <div class="form-element">
+                <label for="password">Password: </label>
+                <input type="password" id="password" placeholder="abcdxyz">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error type</small>
+            </div>
+
+            <div class="form-element">
+                <label for="password">Confirm password: </label>
+                <input type="password" id="password2" placeholder="abcdxyz">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>not same</small>
+            </div>
+
+
+            <div class="form-element">
+                <input type="checkbox" id="accept">
+                <label for="accept"> By creating an account you agree to our <a href="#" >Terms and Privacy</a>.</label>
+                <small>Please be sure before signing up</small>
+            </div>
+
+
+            <div class="form-element">
+                <button type="submit" id="signupbut">SIGN UP</button>
+            </div>
+
+
+        </form>
+    </div>
+    <!---- pop up forgot pass----->
+
+    <div class="popup-reset" id="id03">
+        <div class="cancelreset-btn" onclick="toggle()">&times;</div>
+        <div class="form">
+            <h2> Reset your password </h2>
+            <div class="form-element">
+                <label for="email">Email: </label>
+                <input type="text" id="email" placeholder="Enter your mail">
+            </div>
+
+
+            <div class="form-element">
+                <button>SEND RESET PASSWORD LINK</button>
+            </div>
+
+
+        </div>
+    </div>
 
     <!--    main-section-->
     <section id="main">
