@@ -2,10 +2,20 @@ function LinkHomepage() {
     window.open("homepage.html", "_self");
 }
 /*===pop up sign in==*/
-document.querySelector("#show-signin").addEventListener("click", function() { document.querySelector(".popup").classList.add("active"); });
-document.querySelector(".popup .close-btn").addEventListener("click", function() { document.querySelector(".popup").classList.remove("active"); });
-document.querySelector(".popup .form-but").addEventListener("click", function() { document.querySelector(".popup").classList.remove("active"); });
-document.querySelector(".popup .form-but1").addEventListener("click", function() { document.querySelector(".popup").classList.remove("active"); });
+document.querySelector("#show-signin").addEventListener("click", function() {
+    document.querySelector(".popup").classList.add("active");
+    var blur = document.getElementById('blur');
+    blur.classList.add('active');
+});
+document.querySelector(".popup .close-btn").addEventListener("click", function() {
+    document.querySelector(".popup").classList.remove("active");
+    var blur = document.getElementById('blur');
+    blur.classList.remove('active');
+    document.signin.reset();
+    document.getElementById('error-username').style.visibility = 'hidden';
+    document.getElementById('error-pwd').style.visibility = 'hidden';
+
+});
 
 /*===pop up sign up==*/
 
@@ -22,21 +32,70 @@ function signup() {
 
 /*===pop up reset==*/
 
-
+function reset() {
+    document.querySelector(".popup-reset").classList.add("active");
+    document.querySelector(".popup").classList.remove("active");
+}
 document.querySelector(".popup-reset .cancelreset-btn").addEventListener("click", function() {
     document.querySelector(".popup-reset").style.display = 'none';
     document.querySelector(".popup-reset").classList.remove("active");
 });
 
-function reset() {
-    document.getElementById('id03').style.display = 'block';
-    document.querySelector(".popup").classList.remove("active");
+
+/*===ktra sign in==*/
+function Signinadmin() {
+    var uname = document.getElementById('usernameinput').value;
+    console.log(uname);
+    var pwd = document.getElementById('myInput').value;
+    console.log(pwd);
+
+    if ((uname != '') && (pwd != '')) {
+        document.signin.reset();
+        var blur = document.getElementById('blur');
+        blur.classList.remove('active');
+        document.querySelector(".popup").classList.remove("active");
+        window.open("FrameAdmin.html", "_blank");
+    }
+    if (uname === '') {
+        uname = 'Username cannot be blank';
+        document.getElementById('error-username').innerHTML = uname;
+        document.getElementById('error-username').style.visibility = 'visible';
+        document.getElementById('error-username').style.color = 'red';
+    }
+    if (pwd === '') {
+        pwd = 'Password cannot be blank';
+        document.getElementById('error-pwd').innerHTML = pwd;
+        document.getElementById('error-pwd').style.visibility = 'visible';
+        document.getElementById('error-pwd').style.color = 'red';
+    }
+
 }
 
-/*===blur==*/
 function toggle() {
-    var blur = document.getElementById('blur');
-    blur.classList.toggle('active');
+    var uname = document.getElementById('usernameinput').value;
+    console.log(uname);
+    var pwd = document.getElementById('myInput').value;
+    console.log(pwd);
+
+    if ((uname != '') && (pwd != '')) {
+
+        document.signin.reset();
+        var blur = document.getElementById('blur');
+        blur.classList.remove('active');
+        document.querySelector(".popup").classList.remove("active");
+    }
+    if (uname === '') {
+        uname = 'Username cannot be blank';
+        document.getElementById('error-username').innerHTML = uname;
+        document.getElementById('error-username').style.visibility = 'visible';
+        document.getElementById('error-username').style.color = 'red';
+    }
+    if (pwd === '') {
+        pwd = 'Password cannot be blank';
+        document.getElementById('error-pwd').innerHTML = pwd;
+        document.getElementById('error-pwd').style.visibility = 'visible';
+        document.getElementById('error-pwd').style.color = 'red';
+    }
 
 }
 /*===show password==*/
@@ -127,6 +186,6 @@ function setSuccessFor(input) {
 }
 
 
-// function isEmail(email) {
-//     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-// }
+function isEmail(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}

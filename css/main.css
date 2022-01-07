@@ -1,755 +1,767 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;600&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
-    ;
-}
-
-body {
-    background-color: #F1F5F8;
-    font-family: 'Nunito', sans-serif;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.headline {
-    text-align: center;
-    margin: 10% 0% 5%;
-}
-
-.headline h2 {
-    font-size: 18px;
-    color: #031824;
-    padding: 1% 3%;
-    text-transform: uppercase;
-    font-weight: 800;
-    border: 1px solid #bebebe;
-    display: inline-block;
-    color: #555;
-}
-
-
-/*= navigation bar */
-
-.navigation {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 10%;
-    background-color: #F1F5F8;
-    z-index: 10;
-}
-
-.navigation .logo {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navigation .logo button {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    max-width: 50%;
-}
-
-.logo img {
-    max-width: 60%;
-}
-
-.navigation.logo:hover button {
-    transform: scale(2);
-    transition: all ease 0.3s;
-    box-shadow: 1px 1px 10px #ddd;
-}
-
-.contain-menu {
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#menu {
-    list-style: none;
-}
-
-#menu li {
-    text-align: left;
-    color: #fff;
-    background-color: #F1F5F8;
-}
-
-#menu li a {
-    text-decoration: none;
-    font-size: 15px;
-    display: block;
-    padding: 20px;
-    color: #031824;
-    opacity: 0.8;
-    padding: 10px 20px 10px 20px;
-}
-
-#menu li:hover a {
-    opacity: 1;
-    transition: all ease 0.3s;
-    font-weight: 600
-}
-
-#menu .active {
-    opacity: 1;
-    font-weight: 600
-}
-
-#menu>li {
-    float: left;
-    position: relative;
-}
-
-#menu>li>ul.dropdown_menu {
-    position: absolute;
-    list-style: none;
-    display: none;
-    width: 100%;
-}
-
-#menu>li:hover>ul.dropdown_menu {
-    z-index: 100;
-    display: block;
-}
-
-ul.dropdown_menu>li>ul.submenu {
-    position: absolute;
-    display: none;
-    left: 100%;
-    list-style: none;
-    width: 100%;
-}
-
-ul.dropdown_menu>li:hover>ul.submenu {
-    z-index: 100;
-    display: block;
-}
-
-.right-elements {
-    width: 20%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.right-elements a {
-    margin: 0px 10px;
-}
-
-.right-elements a i {
-    color: #2c2c2c;
-}
-
-.right-elements a:hover i {
-    color: orangered;
-    transition: all ease 0.2s;
-}
-
-
-/*footer*/
-
-#footer {
-    background-color: #ededed;
-    padding: 5% 10px;
-    position: relative;
-    margin-top: 20px;
-    border-top: 1px solid rgb(236, 236, 236);
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px auto;
-}
-
-.footer-logo-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-}
-
-.footer-logo-container button {
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-}
-
-.footer-logo-container span {
-    color: #031824;
-    font-weight: 400;
-    margin: 10px;
-    font-size: 0.8rem;
-}
-
-.footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-social a {
-    margin: 0 6px;
-    color: #031824;
-    display: flex;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-social a:hover {
-    color: red;
-    transition: all ease 0.3s;
-}
-
-.footer-menu {
-    display: flex;
-    align-items: center;
-    width: 70%;
-}
-
-.footer-menu-box {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer-menu-box strong {
-    color: #031824;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.footer-menu-box ul li a,
-.footer-menu-box ul li {
-    color: #031824;
-    font-size: 0.9rem;
-    margin: 5px 0;
-}
-
-.footer-menu-box ul li a:hover {
-    opacity: 0.8;
-    transition: all ease 0.3s;
-}
-
-.footer-email-form {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-email-form strong {
-    color: #031824;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-}
-
-#footer-email {
-    width: 50%;
-    height: 30px;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    padding-left: 5px;
-    font-size: 1rem;
-    margin-bottom: 2px;
-}
-
-#footer-email::placeholder {
-    color: grey;
-    font-size: 12px;
-}
-
-#footer-email-btn {
-    width: 20%;
-    height: 30px;
-    border-radius: 20px;
-    background-color: #031824;
-    border: none;
-    color: white;
-    font-size: 12px;
-}
-
-#footer-email-btn:hover {
-    cursor: pointer;
-    background-color: orangered;
-    transition: all 0.4s ease-out;
-}
-
-
-/*====pop up sign in====*/
-
-.popup {
-    position: fixed;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1.25);
-    width: 600px;
-    height: 450px;
-    padding: 30px 40px;
-    background: #fff;
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
-    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
-}
-
-.popup.active {
-    top: 50%;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
-}
-
-.popup .center-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 18%;
-}
-
-.popup .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #031824;
-    color: white;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.popup .close-btn:hover {
-    background: orangered;
-}
-
-.popup .form h2 {
-    text-align: center;
-    color: #031824;
-    margin: 10px 0px 20px;
-    font-size: 30px;
-}
-
-.popup .form .form-element {
-    margin: 15px 50px 15px;
-}
-
-.popup .form .form-element label {
-    font-size: 13px;
-    color: #031824;
-}
-
-.popup .form .form-element input[type="checkbox"] {
-    margin-right: 5px;
-    margin-top: 5px;
-}
-
-.popup .form .form-element .input-box {
-    margin-top: 5px;
-    display: block;
-    width: 100%;
-    padding: 8px;
-    outline: none;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-}
-
-.popup .form .form-element input[type="password"],
-.popup .form .form-element input[type="email"],
-.popup .form .form-element input[type="text"] {
-    width: 95%;
-    border: none;
-    outline: none;
-}
-
-#reset-pass {
-    border: none;
-    background: transparent;
-    margin-left: 190px;
-    font-size: 13px;
-    color: #1a79ca;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.popup .form .form-element .form-but button,
-.popup .form .form-element .form-but1 button {
-    width: 100%;
-    height: 25px;
-    border: none;
-    outline: none;
-    font-size: 13px;
-    background: #031824;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.eye {
-    position: absolute;
-}
-
-#hide1 {
-    display: none;
-}
-
-.popup .form .form-element button:hover {
-    background: orangered;
-    transition: all ease 0.2s;
-    color: white;
-}
-
-.popup .form .form-element a {
-    display: inline;
-    margin-left: 190px;
-    font-size: 13px;
-    color: #1a79ca;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.popup .form .form-element p {
-    font-size: 10px;
-    color: #031824;
-    text-align: center;
-    margin: 5x 0px;
-}
-
-.popup.active {
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-
-/*====pop up sign up====*/
-
-.popup-signup {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    /*    opacity: 0;*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 600px;
-    height: 520px;
-    padding: 30px 40px;
-    background: #fff;
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
-    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
-}
-
-.popup-signup.active {
-    top: 50%;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms,
-}
-
-.popup-signup .center-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 18%;
-}
-
-.popup-signup .cancel-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #031824;
-    color: white;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.popup-signup .cancel-btn:hover {
-    background: orangered;
-}
-
-.popup-signup .form h2 {
-    text-align: center;
-    color: #031824;
-    margin: 10px 0px 20px;
-    font-size: 30px;
-}
-
-.popup-signup .form .form-element {
-    margin: 15px 50px 15px;
-    position: relative;
-    padding-bottom: 5px;
-}
-
-.popup-signup .form .form-element label {
-    font-size: 13px;
-    color: #031824;
-    display: inline-block;
-}
-
-.popup-signup .form .form-element i {
-    position: absolute;
-    top: 35px;
-    right: 10px;
-    visibility: hidden;
-}
-
-.popup-signup .form .form-element.success i.fa-check-circle {
-    visibility: visible;
-    color: limegreen;
-}
-
-.popup-signup .form .form-element.error i.fa-exclamation-circle {
-    visibility: visible;
-    color: red;
-}
-
-.popup-signup .form .form-element small {
-    visibility: hidden;
-    position: absolute;
-    font-size: 12px;
-    bottom: 1;
-    left: 0;
-}
-
-.popup-signup .form .form-element.error small {
-    color: red;
-    visibility: visible;
-}
-
-.popup-signup .form .form-element input[type="email"],
-.popup-signup .form .form-element input[type="password"],
-.popup-signup .form .form-element input[type="text"] {
-    margin-top: 5px;
-    display: block;
-    width: 100%;
-    padding: 8px;
-    outline: none;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-}
-
-.popup-signup .form .form-element.success input[type="email"],
-.popup-signup .form .form-element.success input[type="password"],
-.popup-signup .form .form-element.success input[type="text"] {
-    border-color: limegreen;
-}
-
-.popup-signup .form .form-element.error input[type="email"],
-.popup-signup .form .form-element.error input[type="password"],
-.popup-signup .form .form-element.error input[type="text"] {
-    border-color: red;
-}
-
-.popup-signup .form .form-element input[type="checkbox"] {
-    margin-right: 5px;
-    margin-top: 5px;
-}
-
-.popup-signup .form .form-element.success input[type="checkbox"] {
-    border-color: limegreen;
-}
-
-.popup-signup .form .form-element.error input[type="checkbox"] {
-    border-color: red;
-}
-
-.popup-signup .form .form-element button {
-    width: 100%;
-    height: 25px;
-    border: none;
-    outline: none;
-    font-size: 13px;
-    background: #031824;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.popup-signup .form .form-element button:hover {
-    background: orangered;
-    transition: all ease 0.2s;
-    color: white;
-}
-
-.popup-signup .form .form-element a {
-    display: inline;
-    font-size: 13px;
-    color: #1a79ca;
-    text-decoration: none;
-}
-
-.popup-signup .form .form-element p {
-    font-size: 10px;
-    color: #031824;
-    text-align: center;
-    margin: 5x 0px;
-}
-
-.popup-signup.active {
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-
-/*====pop up reset pass====*/
-
-.popup-reset {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    /*    opacity: 0;*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 600px;
-    height: 450px;
-    padding: 30px 40px;
-    background: #fff;
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 15px;
-    transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
-}
-
-.popup-reset.active {
-    top: 50%;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms,
-}
-
-.popup-reset .center-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 18%;
-}
-
-.popup-reset .cancelreset-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 15px;
-    height: 15px;
-    background: #031824;
-    color: white;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.popup-reset .cancelreset-btn:hover {
-    background: orangered;
-}
-
-.popup-reset .form h2 {
-    text-align: center;
-    margin: 50px 0;
-    color: #031824;
-    margin: 10px 0px 20px;
-    font-size: 30px;
-}
-
-.popup-reset .form .form-element {
-    margin: 15px 50px 15px;
-}
-
-.popup-reset .form .form-element label {
-    font-size: 13px;
-    color: #031824;
-}
-
-.popup-reset .form .form-element input[type="text"],
-.popup-reset .form .form-element input[type="password"] {
-    margin-top: 5px;
-    display: block;
-    width: 100%;
-    padding: 8px;
-    outline: none;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-}
-
-.popup-reset .form .form-element button {
-    width: 100%;
-    height: 25px;
-    border: none;
-    outline: none;
-    font-size: 13px;
-    background: #031824;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.popup-reset .form .form-element button:hover {
-    background: orangered;
-    transition: all ease 0.2s;
-    color: white;
-}
-
-.popup-reset .form .form-element a {
-    display: inline;
-    font-size: 13px;
-    color: #1a79ca;
-    text-decoration: none;
-}
-
-.popup-reset .form .form-element p {
-    font-size: 10px;
-    color: #031824;
-    text-align: center;
-    margin: 5x 0px;
-}
-
-.popup-reset.active {
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;600&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito', sans-serif;
+        ;
+    }
+    
+    body {
+        background-color: #F1F5F8;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .headline {
+        text-align: center;
+        margin: 10% 0% 5%;
+    }
+    
+    .headline h2 {
+        font-size: 18px;
+        color: #031824;
+        padding: 1% 3%;
+        text-transform: uppercase;
+        font-weight: 800;
+        border: 1px solid #bebebe;
+        display: inline-block;
+        color: #555;
+    }
+    /*= navigation bar */
+    
+    .navigation {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 10%;
+        background-color: #F1F5F8;
+        z-index: 10;
+    }
+    
+    .navigation .logo {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navigation .logo button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        max-width: 50%;
+    }
+    
+    .logo img {
+        max-width: 60%;
+    }
+    
+    .navigation.logo:hover button {
+        transform: scale(2);
+        transition: all ease 0.3s;
+        box-shadow: 1px 1px 10px #ddd;
+    }
+    
+    .contain-menu {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #menu {
+        list-style: none;
+    }
+    
+    #menu li {
+        text-align: left;
+        color: #fff;
+        background-color: #F1F5F8;
+    }
+    
+    #menu li a {
+        text-decoration: none;
+        font-size: 15px;
+        display: block;
+        padding: 20px;
+        color: #031824;
+        opacity: 0.8;
+        padding: 10px 20px 10px 20px;
+    }
+    
+    #menu li:hover a {
+        opacity: 1;
+        transition: all ease 0.3s;
+        font-weight: 600
+    }
+    
+    #menu .active {
+        opacity: 1;
+        font-weight: 600
+    }
+    
+    #menu>li {
+        float: left;
+        position: relative;
+    }
+    
+    #menu>li>ul.dropdown_menu {
+        position: absolute;
+        list-style: none;
+        display: none;
+        width: 100%;
+    }
+    
+    #menu>li:hover>ul.dropdown_menu {
+        z-index: 100;
+        display: block;
+    }
+    
+    ul.dropdown_menu>li>ul.submenu {
+        position: absolute;
+        display: none;
+        left: 100%;
+        list-style: none;
+        width: 100%;
+    }
+    
+    ul.dropdown_menu>li:hover>ul.submenu {
+        z-index: 100;
+        display: block;
+    }
+    
+    .right-elements {
+        width: 20%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .right-elements a {
+        margin: 0px 10px;
+    }
+    
+    .right-elements a i {
+        color: #2c2c2c;
+    }
+    
+    .right-elements a:hover i {
+        color: orangered;
+        transition: all ease 0.2s;
+    }
+    
+    #show-signin {
+        border: none;
+    }
+    /*footer*/
+    
+    #footer {
+        background-color: #ededed;
+        padding: 5% 10px;
+        position: relative;
+        margin-top: 20px;
+        border-top: 1px solid rgb(236, 236, 236);
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px auto;
+    }
+    
+    .footer-logo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+    
+    .footer-logo-container button {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    
+    .footer-logo-container span {
+        color: #031824;
+        font-weight: 400;
+        margin: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-social a {
+        margin: 0 6px;
+        color: #031824;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-social a:hover {
+        color: red;
+        transition: all ease 0.3s;
+    }
+    
+    .footer-menu {
+        display: flex;
+        align-items: center;
+        width: 70%;
+    }
+    
+    .footer-menu-box {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footer-menu-box strong {
+        color: #031824;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .footer-menu-box ul li a,
+    .footer-menu-box ul li {
+        color: #031824;
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+    
+    .footer-menu-box ul li a:hover {
+        opacity: 0.8;
+        transition: all ease 0.3s;
+    }
+    
+    .footer-email-form {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-email-form strong {
+        color: #031824;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        margin-right: 5px;
+    }
+    
+    #footer-email {
+        width: 50%;
+        height: 30px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        padding-left: 5px;
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+    
+    #footer-email::placeholder {
+        color: grey;
+        font-size: 12px;
+    }
+    
+    #footer-email-btn {
+        width: 20%;
+        height: 30px;
+        border-radius: 20px;
+        background-color: #031824;
+        border: none;
+        color: white;
+        font-size: 12px;
+    }
+    
+    #footer-email-btn:hover {
+        cursor: pointer;
+        background-color: orangered;
+        transition: all 0.4s ease-out;
+    }
+    /*====pop up sign in====*/
+    
+    .popup {
+        position: fixed;
+        z-index: 10;
+        top: 90%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.25);
+        width: 600px;
+        height: 450px;
+        padding: 30px 40px;
+        background: #fff;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
+    }
+    
+    .popup.active {
+        top: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+    }
+    
+    .popup .center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 18%;
+    }
+    
+    .popup .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 15px;
+        height: 15px;
+        background: #031824;
+        color: white;
+        text-align: center;
+        line-height: 15px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .popup .close-btn:hover {
+        background: orangered;
+    }
+    
+    .popup .form h2 {
+        text-align: center;
+        color: #031824;
+        margin: 10px 0px 20px;
+        font-size: 30px;
+    }
+    
+    .popup .form .form-element {
+        margin: 15px 50px;
+    }
+    
+    .popup .form .form-element label {
+        font-size: 13px;
+        color: #031824;
+    }
+    
+    .popup .form .form-element input[type="checkbox"] {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    
+    .popup .form .form-element small {
+        visibility: hidden;
+        position: absolute;
+        font-size: 12px;
+    }
+    
+    .popup-signup .form .form-element.error small {
+        color: red;
+        visibility: visible;
+    }
+    
+    .popup .form .form-element .input-box {
+        margin-top: 5px;
+        display: block;
+        width: 100%;
+        padding: 8px;
+        outline: none;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+    }
+    
+    .popup .form .form-element input[type="password"],
+    .popup .form .form-element input[type="email"],
+    .popup .form .form-element input[type="text"] {
+        width: 95%;
+        border: none;
+        outline: none;
+    }
+    
+    #reset-pass {
+        border: none;
+        background: transparent;
+        font-size: 13px;
+        float: right;
+        color: #1a79ca;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .popup .form .form-element .form-but button,
+    .popup .form .form-element .form-but1 button {
+        width: 100%;
+        height: 25px;
+        border: none;
+        outline: none;
+        font-size: 13px;
+        background: #031824;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .eye {
+        position: absolute;
+    }
+    
+    #hide1 {
+        display: none;
+    }
+    
+    .popup .form .form-element button:hover {
+        background: orangered;
+        transition: all ease 0.2s;
+        color: white;
+    }
+    
+    .popup .form .form-element a {
+        display: inline;
+        margin-left: 190px;
+        font-size: 13px;
+        color: #1a79ca;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .popup .form .form-element p {
+        font-size: 10px;
+        color: #031824;
+        text-align: center;
+        margin: 5x 0px;
+    }
+    
+    .popup.active {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    /*==blur when show popup===*/
+    
+    .background#blur.active {
+        filter: blur(10px);
+        pointer-events: none;
+        user-select: none;
+    }
+    /*====pop up sign up====*/
+    
+    .popup-signup {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        /*    opacity: 0;*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 600px;
+        height: 520px;
+        padding: 30px 40px;
+        background: #fff;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
+    }
+    
+    .popup-signup.active {
+        top: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms,
+    }
+    
+    .popup-signup .center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 18%;
+    }
+    
+    .popup-signup .cancel-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 15px;
+        height: 15px;
+        background: #031824;
+        color: white;
+        text-align: center;
+        line-height: 15px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .popup-signup .cancel-btn:hover {
+        background: orangered;
+    }
+    
+    .popup-signup .form h2 {
+        text-align: center;
+        color: #031824;
+        margin: 10px 0px 20px;
+        font-size: 30px;
+    }
+    
+    .popup-signup .form .form-element {
+        margin: 15px 50px 15px;
+        position: relative;
+        padding-bottom: 5px;
+    }
+    
+    .popup-signup .form .form-element label {
+        font-size: 13px;
+        color: #031824;
+        display: inline-block;
+    }
+    
+    .popup-signup .form .form-element i {
+        position: absolute;
+        top: 35px;
+        right: 10px;
+        visibility: hidden;
+    }
+    
+    .popup-signup .form .form-element.success i.fa-check-circle {
+        visibility: visible;
+        color: limegreen;
+    }
+    
+    .popup-signup .form .form-element.error i.fa-exclamation-circle {
+        visibility: visible;
+        color: red;
+    }
+    
+    .popup-signup .form .form-element small {
+        visibility: hidden;
+        position: absolute;
+        font-size: 12px;
+        bottom: 1;
+        left: 0;
+    }
+    
+    .popup-signup .form .form-element.error small {
+        color: red;
+        visibility: visible;
+    }
+    
+    .popup-signup .form .form-element input[type="email"],
+    .popup-signup .form .form-element input[type="password"],
+    .popup-signup .form .form-element input[type="text"] {
+        margin-top: 5px;
+        display: block;
+        width: 100%;
+        padding: 8px;
+        outline: none;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+    }
+    
+    .popup-signup .form .form-element.success input[type="email"],
+    .popup-signup .form .form-element.success input[type="password"],
+    .popup-signup .form .form-element.success input[type="text"] {
+        border-color: limegreen;
+    }
+    
+    .popup-signup .form .form-element.error input[type="email"],
+    .popup-signup .form .form-element.error input[type="password"],
+    .popup-signup .form .form-element.error input[type="text"] {
+        border-color: red;
+    }
+    
+    .popup-signup .form .form-element input[type="checkbox"] {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    
+    .popup-signup .form .form-element.success input[type="checkbox"] {
+        border-color: limegreen;
+    }
+    
+    .popup-signup .form .form-element.error input[type="checkbox"] {
+        border-color: red;
+    }
+    
+    .popup-signup .form .form-element button {
+        width: 100%;
+        height: 25px;
+        border: none;
+        outline: none;
+        font-size: 13px;
+        background: #031824;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .popup-signup .form .form-element button:hover {
+        background: orangered;
+        transition: all ease 0.2s;
+        color: white;
+    }
+    
+    .popup-signup .form .form-element a {
+        display: inline;
+        font-size: 13px;
+        color: #1a79ca;
+        text-decoration: none;
+    }
+    
+    .popup-signup .form .form-element p {
+        font-size: 10px;
+        color: #031824;
+        text-align: center;
+        margin: 5x 0px;
+    }
+    
+    .popup-signup.active {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    /*====pop up reset pass====*/
+    
+    .popup-reset {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        /*    opacity: 0;*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 600px;
+        height: 450px;
+        padding: 30px 40px;
+        background: #fff;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
+    }
+    
+    .popup-reset.active {
+        top: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms,
+    }
+    
+    .popup-reset .center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 18%;
+    }
+    
+    .popup-reset .cancelreset-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 15px;
+        height: 15px;
+        background: #031824;
+        color: white;
+        text-align: center;
+        line-height: 15px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .popup-reset .cancelreset-btn:hover {
+        background: orangered;
+    }
+    
+    .popup-reset .form h2 {
+        text-align: center;
+        margin: 50px 0;
+        color: #031824;
+        margin: 10px 0px 20px;
+        font-size: 30px;
+    }
+    
+    .popup-reset .form .form-element {
+        margin: 15px 50px 15px;
+    }
+    
+    .popup-reset .form .form-element label {
+        font-size: 13px;
+        color: #031824;
+    }
+    
+    .popup-reset .form .form-element input[type="text"],
+    .popup-reset .form .form-element input[type="password"] {
+        margin-top: 5px;
+        display: block;
+        width: 100%;
+        padding: 8px;
+        outline: none;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+    }
+    
+    .popup-reset .form .form-element button {
+        width: 100%;
+        height: 25px;
+        border: none;
+        outline: none;
+        font-size: 13px;
+        background: #031824;
+        color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .popup-reset .form .form-element button:hover {
+        background: orangered;
+        transition: all ease 0.2s;
+        color: white;
+    }
+    
+    .popup-reset .form .form-element a {
+        display: inline;
+        font-size: 13px;
+        color: #1a79ca;
+        text-decoration: none;
+    }
+    
+    .popup-reset .form .form-element p {
+        font-size: 10px;
+        color: #031824;
+        text-align: center;
+        margin: 5x 0px;
+    }
+    
+    .popup-reset.active {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
