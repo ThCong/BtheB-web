@@ -1,0 +1,50 @@
+<deli-partner>
+<delivery> 
+	<id>1</id> 
+	<delid>125</delid>
+	<name>GHN</name>
+	<date>31/1/2021</date> 
+	<deldate>2/2/2021</deldate> 
+	<status>Done</status> 
+	<address>An Khe, Gia Lai</address> 
+</delivery>
+
+<delivery> 
+	<id>2</id> 
+	<delid>431</delid>
+	<name>GHN</name>
+	<date>31/3/2021</date> 
+	<deldate>2/4/2021</deldate> 
+	<status>Done</status> 
+	<address>Ba Ria, Vung Tau</address> 
+</delivery>
+
+<delivery> 
+	<id>3</id> 
+	<delid>686</delid>
+	<name>GHTK</name>
+	<date>28/5/2021</date> 
+	<deldate>30/5/2021</deldate> 
+	<status>Done</status> 
+	<address>Tam Ky, Quang Nam</address> 
+</delivery>
+
+<delivery> 
+	<id>4</id> 
+	<delid>857</delid>
+	<name>GHN</name>
+	<date>14/8/2021</date> 
+	<deldate>16/8/2021</deldate> 
+	<status>Done</status> 
+	<address>District 12, HCM</address> 
+</delivery>
+
+<delivery> 
+	<id>5</id> 
+	<delid>935</delid>
+	<name>GHTK</name>
+	<date>18/10/2021</date> 
+	<deldate>20/10/2021</deldate> 
+	<status>Done</status> 
+	<address>Hoi An, Quang Nam</address> 
+</delivery></deli-partner>

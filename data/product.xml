@@ -1,0 +1,67 @@
+<CATALOG>
+<product> 
+	<id>1347</id> 
+	<name>Nike Air Force</name>
+	<size>38</size> 
+	<quantity>1</quantity> 
+	<color>White</color> 
+	<brand>Nike</brand>
+	<activity>Running</activity>
+	<price>$50</price> 
+</product>
+
+<product> 
+	<id>2467</id> 
+	<name>Vans Old Skool</name>
+	<size>40</size> 
+	<quantity>2</quantity> 
+	<color>Black</color> 
+	<brand>Vans</brand>
+	<activity>Casual</activity>
+	<price>$80</price> 
+</product>
+
+<product> 
+	<id>4574</id> 
+	<name>Warmed Slip On</name>
+	<size>39</size> 
+	<quantity>1</quantity> 
+	<color>Orange</color> 
+	<brand>Timberland</brand>
+	<activity>Casual</activity>
+	<price>$45</price> 
+</product>
+
+<product> 
+	<id>8909</id> 
+	<name>Chuck-Taylor 70</name>
+	<size>39</size> 
+	<quantity>1</quantity> 
+	<color>Mix</color> 
+	<brand>Converse</brand>
+	<activity>Casual</activity>
+	<price>$180</price> 
+</product>
+
+<product> 
+	<id>8756</id> 
+	<name>Air Jordan</name>
+	<size>43</size> 
+	<quantity>1</quantity> 
+	<color>Blue</color> 
+	<brand>Nike</brand>
+	<activity>Running</activity>
+	<price>$80</price> 
+</product>
+
+<product> 
+	<id>2314</id> 
+	<name>Lace-up Boots</name>
+	<size>40</size> 
+	<quantity>1</quantity> 
+	<color>Pink</color> 
+	<brand>The North Face</brand>
+	<activity>Tennis</activity>
+	<price>$70</price> 
+</product>
+</CATALOG>

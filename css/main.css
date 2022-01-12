@@ -39,15 +39,19 @@
     
     .navigation {
         display: flex;
-        align-content: center;
         justify-content: center;
+        align-items: center;
         position: fixed;
         left: 0px;
         top: 0px;
         width: 100%;
-        height: 10%;
+        height: 15%;
         background-color: #F1F5F8;
         z-index: 10;
+    }
+    
+    marquee {
+        display: none;
     }
     
     .navigation .logo {
@@ -66,6 +70,14 @@
     
     .logo img {
         max-width: 60%;
+        object-fit: contain;
+        object-position: center;
+    }
+    
+    .nav-mobile {
+        display: none;
+        color: #031824;
+        padding: 10px;
     }
     
     .navigation.logo:hover button {
@@ -140,6 +152,10 @@
     ul.dropdown_menu>li:hover>ul.submenu {
         z-index: 100;
         display: block;
+    }
+    
+    .welcome {
+        display: none;
     }
     
     .right-elements {
@@ -221,7 +237,7 @@
         align-items: center;
     }
     
-    .footer-social a:hover {
+    #footer a:hover {
         color: red;
         transition: all ease 0.3s;
     }
@@ -246,15 +262,14 @@
         letter-spacing: 1px;
     }
     
-    .footer-menu-box ul li a,
-    .footer-menu-box ul li {
+    .footer-menu-box a {
         color: #031824;
         font-size: 0.9rem;
         margin: 5px 0;
     }
     
-    .footer-menu-box ul li a:hover {
-        opacity: 0.8;
+    .footer-menu-box a:hover {
+        color: red;
         transition: all ease 0.3s;
     }
     
@@ -311,7 +326,8 @@
         z-index: 10;
         top: 90%;
         left: 50%;
-        opacity: 0;
+        /* opacity: 0; */
+        display: none;
         transform: translate(-50%, -50%) scale(1.25);
         width: 600px;
         height: 450px;
@@ -324,7 +340,8 @@
     
     .popup.active {
         top: 50%;
-        opacity: 1;
+        /* opacity: 1; */
+        display: block;
         transform: translate(-50%, -50%) scale(1);
         transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
     }
@@ -492,7 +509,7 @@
     
     .popup-signup.active {
         top: 50%;
-        opacity: 1;
+        display: block;
         transform: translate(-50%, -50%) scale(1);
         transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms,
     }
@@ -642,6 +659,13 @@
         margin: 5x 0px;
     }
     
+    .popup-signup #register-status {
+        margin-top: 20px;
+        font-size: 15px;
+        color: limegreen;
+        visibility: hidden;
+    }
+    
     .popup-signup.active {
         visibility: visible;
         opacity: 1;
@@ -649,7 +673,7 @@
     }
     /*====pop up reset pass====*/
     
-    .popup-reset {
+    .resetpwd {
         display: none;
         position: fixed;
         z-index: 10;
@@ -666,14 +690,15 @@
         transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 200ms ease-in-out 0ms;
     }
     
-    .popup-reset.active {
+    .resetpwd.active {
         top: 50%;
-        opacity: 1;
+        /* opacity: 1; */
+        display: block;
         transform: translate(-50%, -50%) scale(1);
         transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms,
     }
     
-    .popup-reset .center-img {
+    .resetpwd .center-img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -682,7 +707,7 @@
         width: 18%;
     }
     
-    .popup-reset .cancelreset-btn {
+    .resetpwd .cancelreset-btn {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -696,11 +721,11 @@
         cursor: pointer;
     }
     
-    .popup-reset .cancelreset-btn:hover {
+    .resetpwd .cancelreset-btn:hover {
         background: orangered;
     }
     
-    .popup-reset .form h2 {
+    .resetpwd .form h2 {
         text-align: center;
         margin: 50px 0;
         color: #031824;
@@ -708,17 +733,23 @@
         font-size: 30px;
     }
     
-    .popup-reset .form .form-element {
+    .resetpwd small {
+        margin-top: 20px;
+        visibility: hidden;
+        color: red;
+    }
+    
+    .resetpwd .form .form-element {
         margin: 15px 50px 15px;
     }
     
-    .popup-reset .form .form-element label {
+    .resetpwd .form .form-element label {
         font-size: 13px;
         color: #031824;
     }
     
-    .popup-reset .form .form-element input[type="text"],
-    .popup-reset .form .form-element input[type="password"] {
+    .resetpwd .form .form-element input[type="text"],
+    .resetpwd .form .form-element input[type="password"] {
         margin-top: 5px;
         display: block;
         width: 100%;
@@ -728,7 +759,7 @@
         border-radius: 5px;
     }
     
-    .popup-reset .form .form-element button {
+    .resetpwd .form .form-element button {
         width: 100%;
         height: 25px;
         border: none;
@@ -740,28 +771,141 @@
         cursor: pointer;
     }
     
-    .popup-reset .form .form-element button:hover {
+    .resetpwd .form .form-element button:hover {
         background: orangered;
         transition: all ease 0.2s;
         color: white;
     }
     
-    .popup-reset .form .form-element a {
+    .resetpwd .form .form-element a {
         display: inline;
         font-size: 13px;
         color: #1a79ca;
         text-decoration: none;
     }
     
-    .popup-reset .form .form-element p {
+    .resetpwd .form .form-element p {
         font-size: 10px;
         color: #031824;
         text-align: center;
         margin: 5x 0px;
     }
     
-    .popup-reset.active {
+    .resetpwd.active {
         visibility: visible;
         opacity: 1;
         transition: 0.5s;
+    }
+    /* Tablet */
+    
+    @media screen and (min-width:600px) and (max-width:1100px) {
+        .navigation {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 20%;
+            background-color: whitesmoke;
+            z-index: 10;
+        }
+        .navigation .logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navigation .logo button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        .logo img {
+            max-width: 30%;
+            max-height: 100px;
+        }
+        .navigation.logo:hover button {
+            transform: scale(2);
+            transition: all ease 0.3s;
+            box-shadow: 1px 1px 10px #ddd;
+        }
+        .contain-menu {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* padding: 0px 10px 0px 0px; */
+        }
+        .nav-mobile {
+            width: 100%;
+            display: block;
+            color: #031824;
+            padding: 0px 20px;
+            font-size: large;
+            font-size: 20px;
+        }
+        #menu {
+            list-style: none;
+            display: none;
+            flex-direction: column;
+            margin-top: 90%;
+        }
+        #menu li {
+            width: 100%;
+            color: white;
+            background-color: #031824;
+        }
+        #menu li a {
+            text-decoration: none;
+            font-size: 15px;
+            padding: 20px;
+            color: white;
+            opacity: 0.8;
+            padding: 10px 20px 10px 20px;
+        }
+        #menu li:hover a {
+            opacity: 1;
+            transition: all ease 0.3s;
+            font-weight: 600
+        }
+        #menu>li>ul.dropdown_menu {
+            list-style: none;
+            display: none;
+            width: 100%;
+        }
+        #menu>li:hover>ul.dropdown_menu {
+            display: block;
+            margin-left: 100%;
+            margin-top: -20%;
+        }
+        .right-elements {
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .right-elements a {
+            margin: 0px 10px;
+        }
+        .right-elements a i {
+            color: #2c2c2c;
+        }
+        .right-elements a:hover i {
+            color: orangered;
+            transition: all ease 0.2s;
+        }
+        #show-signin {
+            border: none;
+        }
+        marquee {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .welcome {
+            display: flex;
+        }
     }

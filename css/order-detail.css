@@ -23,10 +23,8 @@ h1 {
     background-color: #EDEDED;
     color: #031824;
     border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    width: 80%;
-    padding: 20px 0px;
+    padding: 30px 120px;
+    font-weight: bold
 }
 
 #Track {
@@ -34,10 +32,8 @@ h1 {
     background-color: #031824;
     color: #F1F5F8;
     border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    width: 80%;
-    padding: 20px 0px;
+    padding: 30px 120px;
+    font-weight: bold
 }
 
 #Contact {
@@ -45,10 +41,8 @@ h1 {
     background-color: #EDEDED;
     color: #031824;
     border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    width: 80%;
-    padding: 20px 0px;
+    padding: 30px 120px;
+    font-weight: bold
 }
 
 .container {
@@ -100,7 +94,7 @@ h1 {
     margin-top: 10px;
 }
 
-.container2 {
+.line-progress {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -129,7 +123,7 @@ h1 {
     transition: 0.4s ease;
 }
 
-.progress {
+.container_progress .progress {
     background-color: #808080;
     position: absolute;
     top: 50%;
@@ -141,7 +135,7 @@ h1 {
     transition: 0.4s ease;
 }
 
-.container2 .circle {
+.line-progress .circle {
     background-color: #ffffff;
     color: #031824;
     border-radius: 50%;
@@ -165,7 +159,7 @@ h1 {
     align-items: center;
 }
 
-.pop-up .container-popup {
+.container-popup {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -197,7 +191,7 @@ h1 {
     position: absolute;
 }
 
-.circle.one {
+.contact-form .circle.one {
     width: 130px;
     height: 130px;
     top: 130px;
@@ -212,10 +206,7 @@ h1 {
 }
 
 .contact-form:before {
-    content: "";
     position: absolute;
-    width: 26px;
-    height: 26px;
     background-color: #031824;
     transform: rotate(45deg);
     top: 50px;
@@ -236,7 +227,7 @@ form {
     line-height: 1;
 }
 
-.container-popup .input-container {
+.input-container {
     position: relative;
     margin: 20px 0;
 }
@@ -255,14 +246,14 @@ form {
 }
 
 textarea.input {
-    min-height: 150px;
+    min-height: 130px;
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
     width: 100%;
 }
 
-.container-popup .input-container label {
+.input-container label {
     position: absolute;
     top: 50%;
     left: 15px;
@@ -272,15 +263,15 @@ textarea.input {
     z-index: 1000;
 }
 
-.container-popup .input-container.textarea label {
+.input-container.textarea label {
     top: 10px;
     transform: translateY(0)
 }
 
 .button {
     display: flex;
-    margin-left: -20px;
-    text-align: center
+    margin-top: 30px;
+    justify-content: flex-end;
 }
 
 .btn {
@@ -289,8 +280,6 @@ textarea.input {
     color: #031824;
     background-color: #EDEDED;
     border-radius: 10px;
-    margin-left: 40px;
-    margin-bottom: 50px
 }
 
 .btn:hover {
@@ -304,12 +293,17 @@ textarea.input {
     color: #031824;
     background-color: #EDEDED;
     border-radius: 10px;
-    margin-left: 110px;
     margin-bottom: 50px;
-    cursor: pointer
+    cursor: pointer;
+    margin-left: 20px;
 }
 
-.container-popup .input-container span {
+.btn2:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.input-container span {
     position: absolute;
     top: 0;
     left: 25px;
@@ -321,8 +315,8 @@ textarea.input {
     background-color: #031824;
 }
 
-.container-popup .input-container span:before,
-.container-popup .input-container span:after {
+.input-container span:before,
+.input-container span:after {
     content: "";
     position: absolute;
     width: 10%;
@@ -334,15 +328,15 @@ textarea.input {
     transform: translateY(-50%);
 }
 
-.container-popup .input-container span:before {
+.input-container span:before {
     left: 50%;
 }
 
-.container-popup .input-container span:after {
+.input-container span:after {
     right: 50%
 }
 
-.container-popup .input-container.focus label {
+.input-container.focus label {
     top: 0;
     transform: translateY(-50%);
     left: 25px;

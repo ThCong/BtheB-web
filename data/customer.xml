@@ -1,0 +1,46 @@
+<cus-list>
+<customer> 
+	<id>120312</id> 
+	<name>Dam Van Thang</name>
+	<phone>0945789645</phone> 
+	<address>An Khe, Gia Lai</address> 
+	<gmail>onlypede@gmail.com</gmail> 
+	<total>$500</total> 
+</customer>
+
+<customer> 
+	<id>120532</id> 
+	<name>Dong Uyen</name>
+	<phone>032456458</phone> 
+	<address>Ba Ria, Vung Tau</address> 
+	<gmail>dorisdong@gmail.com</gmail> 
+	<total>$700</total> 
+</customer>
+
+<customer> 
+	<id>120672</id> 
+	<name>Adam Smith</name>
+	<phone>015678941</phone> 
+	<address>Tam Ky, Quang Nam</address> 
+	<gmail>congngu@gmail.com</gmail> 
+	<total>$450</total> 
+</customer>
+
+<customer> 
+	<id>123587</id> 
+	<name>Pham Thi Thu</name>
+	<phone>097512464</phone> 
+	<address>District 12, HCM</address> 
+	<gmail>thoconbado@gmail.com</gmail> 
+	<total>$800</total> 
+</customer>
+
+<customer> 
+	<id>124758</id> 
+	<name>Lo Uu Luu</name>
+	<phone>0945759984</phone> 
+	<address>Hoi An, Quang Nam</address> 
+	<gmail>stephanie@gmail.com</gmail> 
+	<total>$980</total> 
+</customer>
+</cus-list>

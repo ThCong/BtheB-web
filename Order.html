@@ -8,7 +8,7 @@
     <title></title>
     <link rel="stylesheet" href="css/admin/order.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'>
-
+    <script src="js/admin/order.js"></script>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 
                 </div>
                 <table>
-                    <tbody>
+                    <thead>
                         <tr>
                             <th>Order ID</th>
                             <th>Customer ID</th>
@@ -41,7 +41,13 @@
                             <th>Delivery ID</th>
 
                         </tr>
-                        <tr>
+                    </thead>
+                    <tbody id="orders">
+
+                    </tbody>
+
+
+                    <!-- <tr>
                             <td>1</td>
                             <td>120312</td>
                             <td>31/1/2021</td>
@@ -85,9 +91,8 @@
                             <td>Done</td>
                             <td>935</td>
 
-                        </tr>
+                        </tr> -->
 
-                    </tbody>
                 </table>
             </div>
         </div>

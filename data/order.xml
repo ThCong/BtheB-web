@@ -1,0 +1,46 @@
+<list>
+<order> 
+	<id>1</id> 
+	<cusid>120312</cusid>
+	<date>31/1/2021</date> 
+	<total>$500</total> 
+	<status>Done</status> 
+	<delid>125</delid>
+</order>
+
+<order> 
+	<id>2</id> 
+	<cusid>120532</cusid>
+	<date>31/3/2021</date> 
+	<total>$700</total> 
+	<status>Done</status> 
+	<delid>431</delid>
+</order>
+
+<order> 
+	<id>3</id> 
+	<cusid>120672</cusid>
+	<date>28/5/2021</date> 
+	<total>$450</total> 
+	<status>Done</status> 
+	<delid>686</delid>
+</order>
+
+<order> 
+	<id>4</id> 
+	<cusid>123587</cusid>
+	<date>14/8/2021</date> 
+	<total>$800</total> 
+	<status>Done</status> 
+	<delid>857</delid>
+</order>
+
+<order> 
+	<id>5</id> 
+	<cusid>124758</cusid>
+	<date>18/10/2021</date> 
+	<total>$980</total> 
+	<status>Done</status> 
+	<delid>935</delid>
+</order>
+</list>

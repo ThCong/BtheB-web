@@ -221,15 +221,25 @@ hr {
 }
 
 .side {
-    float: left;
-    width: 10%;
+    width: 100%;
     margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.side .star {
+    width: 10%;
 }
 
 .middle {
     float: left;
     width: 70%;
     margin-top: 10px;
+}
+
+.side-right {
+    width: 10%;
 }
 
 
@@ -242,20 +252,12 @@ hr {
 
 /* Clear floats after the columns */
 
-.rate-row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 
 /* The bar container */
 
 .bar-container {
-    width: 100%;
+    width: 60%;
     background-color: #f1f1f1;
-    text-align: center;
-    color: white;
 }
 
 

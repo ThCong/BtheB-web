@@ -15,6 +15,7 @@
             document.getElementById("pop-up").style.display = "none";
         }
     </script>
+    <script src="js/FAQ.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'>
     <link rel="stylesheet" href="css/order-detail.css">
     <script src="js/main.js"></script>
@@ -24,7 +25,10 @@
     <!--    navigationbar-->
     <nav class="navigation">
         <!--        Logo-->
-        <div class="logo"><button type="button" onclick="LinkHomepage()"><img src="image/homepage/BtheB.png" width="62.9" height="21.7"></button>
+        <div class="logo">
+            <button type="button" onclick="LinkHomepage()">
+                <img src="image/homepage/BtheB.png" >
+            </button>
         </div>
 
         <!--        menu-->
@@ -74,6 +78,7 @@
             </ul>
         </div>
 
+
         <!--        right-->
         <div class="right-elements">
             <!--        search-->
@@ -84,7 +89,11 @@
                 <i class="fa fa-shopping-bag"></i></a>
             <!--        user-->
             <a href="#" class="user">
-                <i class="fa fa-user"></i></a>
+                <button type="button" id="show-signin">
+                    <i class="fa fa-user" style="font-size: 16px">
+                    </i>
+                </button>
+            </a>
 
         </div>
     </nav>
@@ -93,16 +102,17 @@
     <h1>ORDER DETAILS</h1>
     <img src="image/Customer Service_FAQ Image/banner.jpg" width="100%" />
 
-    <div class="tab">
-        <a href="Customer Service_FAQ.html" id="FAQ">
+    <p style="margin-top:70px; text-align:center">
+        <a href="Customer Service_FAQ.html#FAQ" id="FAQ">
             FAQ
-        </a>
+        </a> &emsp;
         <a href="CustomerService_TrackOrder.html" id="Track">
             Track Order
-        </a>
+        </a> &emsp;
         <a id="Contact" onclick="open_popup()">
-            Contact Us</a>
-    </div>
+            Contact Us
+        </a>
+    </p>
     <div class="pop-up" id="pop-up">
         <div class="container-popup">
             <div class="form">
@@ -141,7 +151,7 @@
                     <span class="circle one"></span>
                     <span class="circle two"></span>
 
-                    <form>
+                    <form name="contact">
                         <h3 class="title">Contact Us</h3>
                         <div class="input-container focus">
                             <input type="text" name="name" class="input" />
@@ -164,7 +174,7 @@
                             <span>Message</span>
                         </div>
                         <div class="button">
-                            <input type="button" value="Send" class="btn" />
+                            <input type="button" value="Send" class="btn" onclick="Send()" />
                             <input type="button" value="Close" class="btn2" id="close" onclick="close_popup()" />
                         </div>
                     </form>
@@ -172,7 +182,6 @@
             </div>
         </div>
     </div>
-
     <div class="container" id="detail">
         <div class="card1">
             <p class="status">
@@ -197,7 +206,7 @@
         </div>
     </div>
 
-    <div class="container2">
+    <div class="line-progress">
         <div class="container_progress">
             <div class="progress" id="progress"></div>
             <div class="circle active"><i><img src="image/Order Detail Image/invoice.png" /></i></div>
@@ -213,10 +222,10 @@
             <span style="margin-left: 205px; color: #031824"><b>18/11</b></span>
         </div>
         <div>
-            <span style="margin-left:40px; color:#52BB49"><b>Order Placed</b></span>
+            <span style=" color:#52BB49"><b>Order Placed</b></span>
             <span style="margin-left: 130px; color: #52BB49"><b>Payment Confirmed</b></span>
-            <span style="margin-left: 110px; color: #52BB49"><b>Order Processed</b></span>
-            <span style="margin-left: 130px; color:#031824"><b>Ready to pick up</b></span>
+            <span style="margin-left: 100px; color: #52BB49"><b>Order Processed</b></span>
+            <span style="margin-left: 120px; color:#031824"><b>Ready to pick up</b></span>
         </div>
 
 

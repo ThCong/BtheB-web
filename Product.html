@@ -6,6 +6,8 @@
     <script src="https://kit.fontawesome.com/25879f3c8f.js" crossorigin="anonymous"></script>
     <!--    <link href="style.css" rel="stylesheet">-->
     <title></title>
+    <script src="js/admin/product.js"></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'>
     <link rel="stylesheet" href="css/admin/product.css">
 </head>
@@ -28,7 +30,7 @@
                     <span style="color:#031824; font-size:22px; font-weight:bold; margin-left: 20px">Product</span>
                 </div>
                 <table>
-                    <tbody>
+                    <thead>
                         <tr>
                             <th>Product ID</th>
                             <th>Product Name</th>
@@ -39,7 +41,11 @@
                             <th>Activity</th>
                             <th>Price</th>
                         </tr>
-                        <tr>
+                    </thead>
+                    <tbody id="products"></tbody>
+
+
+                    <!-- <tr>
                             <td>1347</td>
                             <td>Nike Air Force</td>
                             <td>38</td>
@@ -98,8 +104,7 @@
                             <td>The North Face</td>
                             <td>Tennis</td>
                             <td>$70</td>
-                        </tr>
-                    </tbody>
+                        </tr> -->
                 </table>
             </div>
         </div>
